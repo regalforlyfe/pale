@@ -6,6 +6,7 @@
 
     if($mysqli->query($query) == TRUE){
         echo "Berhasil menambahkan data";
+        header('Location: read.php');
     } else  {
         echo "Error: $mysqli->error";
     }
